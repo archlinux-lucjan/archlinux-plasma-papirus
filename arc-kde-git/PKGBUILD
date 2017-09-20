@@ -1,0 +1,47 @@
+# Maintainer: Piotr Gorski <lucjan.lucjanov@gmail.com>
+# Contributor: Bruno Pagani <archange@archlinux.org>
+
+pkgbase=arc-kde-git
+_pkgbase=arc-kde
+pkgname=('arc-kde-git' 'kvantum-theme-arc-git')
+pkgver=20170918.r142.gd0e8f54
+pkgrel=1
+pkgdesc="Arc theme for KDE Plasma 5"
+arch=('any')
+url="https://github.com/PapirusDevelopmentTeam/${_pkgbase}"
+license=('GPL3')
+options=('!strip')
+source=("${_pkgbase}::git+${url}.git")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd ${_pkgbase}
+  echo "$(git show --format='%cI' -q master | sed 's/T.*//g;s/-//g').r$(git rev-list --count HEAD).g$(git rev-parse --short HEAD)"
+}
+
+package_arc-kde-git() {
+    optdepends=('kvantum-theme-arc: Arc theme for Kvantum Qt style (recommended)')
+    provides=('arc-kde')
+    conflicts=('arc-kde')
+    replaces=('arc-kde')
+    cd ${_pkgbase}
+    install -d "${pkgdir}"/usr/share
+ 
+    cp -r plasma "${pkgdir}"/usr/share
+    cp -r aurorae "${pkgdir}"/usr/share
+    cp -r color-schemes "${pkgdir}"/usr/share
+    cp -r konsole "${pkgdir}"/usr/share
+    cp -r yakuake "${pkgdir}"/usr/share
+}
+
+package_kvantum-theme-arc-git() {
+    pkgdesc="Arc theme for Kvantum"
+    depends=('kvantum-qt5')
+    provides=('kvantum-theme-arc')
+    conflicts=('kvantum-theme-arc')
+    replaces=('kvantum-theme-arc')
+    cd ${_pkgbase}
+    install -d "${pkgdir}"/usr/share
+
+    cp -r Kvantum "${pkgdir}"/usr/share
+}
