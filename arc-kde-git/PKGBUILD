@@ -20,7 +20,8 @@ pkgver() {
 }
 
 package_arc-kde-git() {
-    optdepends=('kvantum-theme-arc: Arc theme for Kvantum Qt style (recommended)')
+    optdepends=('kvantum-theme-arc: Arc theme for Kvantum Qt style (recommended)' 
+                'papirus-icon-theme: for a more consistent and beautiful experience (recommended)')
     provides=('arc-kde')
     conflicts=('arc-kde')
     replaces=('arc-kde')

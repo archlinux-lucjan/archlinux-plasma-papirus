@@ -20,7 +20,8 @@ pkgver() {
 }
 
 package_adapta-kde-git() {
-    optdepends=('kvantum-theme-adapta: Adapta theme for Kvantum Qt style (recommended)')
+    optdepends=('kvantum-theme-adapta: Adapta theme for Kvantum Qt style (recommended)' 
+                'papirus-icon-theme: for a more consistent and beautiful experience (recommended)')
     conflicts=('adapta-kde')
     provides=('adapta-kde')
     replaces=('adapta-kde')
