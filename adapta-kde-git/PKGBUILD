@@ -4,7 +4,7 @@
 pkgbase=adapta-kde-git
 _pkgbase=adapta-kde
 pkgname=('adapta-kde-git' 'kvantum-theme-adapta-git')
-pkgver=20170920.r76.g891ee2f
+pkgver=20170920.r78.gc2fb00f
 pkgrel=1
 pkgdesc="Adapta theme for KDE Plasma 5"
 arch=('any')
@@ -20,7 +20,6 @@ pkgver() {
 }
 
 package_adapta-kde-git() {
-    depends=('papirus-icon-theme')
     optdepends=('kvantum-theme-adapta: Adapta theme for Kvantum Qt style (recommended)')
     conflicts=('adapta-kde')
     provides=('adapta-kde')
