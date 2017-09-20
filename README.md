@@ -10,7 +10,9 @@ git clone https://github.com/sirlucjan/archlinux-plasma-papiruss.git
 # Install:
 
 
-# Adapta KDE
+# Adapta 
+
+* See: https://github.com/PapirusDevelopmentTeam/adapta-kde 
 
 ```
 cd /some_path/archlinux-plasma-papirus/adapta-kde-git
@@ -19,6 +21,8 @@ makepkg -srci
 ```
 
 # Arc KDE
+
+* See: https://github.com/PapirusDevelopmentTeam/arc-kde
 
 ```
 cd /some_path/archlinux-plasma-papirus/arc-kde-git
