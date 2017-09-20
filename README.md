@@ -1,10 +1,10 @@
 # Plasma themes 
-# KDE customization
+# Papirus KDE customization
 
 # Download:
 
 ```
-git clone https://github.com/sirlucjan/archlinux-plasma-papiruss.git
+git clone https://github.com/sirlucjan/archlinux-plasma-papirus.git
 
 ```
 # Install:
