@@ -7,6 +7,13 @@
 git clone https://github.com/sirlucjan/archlinux-plasma-papirus.git
 
 ```
+or
+
+```
+git clone https://gitlab.com/sirlucjan/archlinux-plasma-papirus.git
+
+```
+
 # Install:
 
 

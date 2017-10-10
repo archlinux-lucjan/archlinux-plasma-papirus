@@ -1,0 +1,9 @@
+.
+├── Files
+├── README.md
+├── adapta-kde-git
+│   └── PKGBUILD
+└── arc-kde-git
+    └── PKGBUILD
+
+2 directories, 4 files
