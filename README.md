@@ -4,13 +4,13 @@
 # Download:
 
 ```
-git clone https://github.com/sirlucjan/archlinux-plasma-papirus.git
+git clone https://github.com/archlinux-lucjan/archlinux-plasma-papirus.git
 
 ```
 or
 
 ```
-git clone https://gitlab.com/sirlucjan/archlinux-plasma-papirus.git
+git clone https://gitlab.com/archlinux-lucjan/archlinux-plasma-papirus.git
 
 ```
 
