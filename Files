@@ -5,7 +5,9 @@
 │   └── PKGBUILD
 ├── arc-kde-git
 │   └── PKGBUILD
+├── papirus-folders-git
+│   └── PKGBUILD
 └── papirus-icon-theme-git
     └── PKGBUILD
 
-3 directories, 5 files
+4 directories, 6 files
