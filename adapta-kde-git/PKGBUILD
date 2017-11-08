@@ -4,7 +4,7 @@
 pkgbase=adapta-kde-git
 _pkgbase=adapta-kde
 pkgname=('adapta-kde-git' 'kvantum-theme-adapta-git')
-pkgver=20170920.r78.gc2fb00f
+pkgver=20171105.r106.g3b87c56
 pkgrel=1
 pkgdesc="Adapta theme for KDE Plasma 5"
 arch=('any')
@@ -16,6 +16,9 @@ sha256sums=('SKIP')
 
 pkgver() {
   cd ${_pkgbase}
+  # git describe
+  # git describe --long --tags | sed 's/-/./g'
+  # git show
   echo "$(git show --format='%cI' -q master | sed 's/T.*//g;s/-//g').r$(git rev-list --count HEAD).g$(git rev-parse --short HEAD)"
 }
 

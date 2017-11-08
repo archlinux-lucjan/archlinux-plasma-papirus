@@ -4,7 +4,7 @@
 pkgbase=arc-kde-git
 _pkgbase=arc-kde
 pkgname=('arc-kde-git' 'kvantum-theme-arc-git')
-pkgver=20170918.r142.gd0e8f54
+pkgver=20171105.r152.ga0abe6f
 pkgrel=1
 pkgdesc="Arc theme for KDE Plasma 5"
 arch=('any')
@@ -16,6 +16,9 @@ sha256sums=('SKIP')
 
 pkgver() {
   cd ${_pkgbase}
+  # git describe
+  # git describe --long --tags | sed 's/-/./g'
+  # git show
   echo "$(git show --format='%cI' -q master | sed 's/T.*//g;s/-//g').r$(git rev-list --count HEAD).g$(git rev-parse --short HEAD)"
 }
 
