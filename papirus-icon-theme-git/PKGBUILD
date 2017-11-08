@@ -1,0 +1,45 @@
+# Maintainer: Piotr Górski <lucjan.lucjanov@gmail.com>
+# Contributor: Edgard Castro <castro@edgard.org>
+# Contributor: Frederic Bezies <fredbezies at gmail dot com>
+# Contributor: FadeMind <fademind@gmail.com>
+# Contributor: Icaro Perseo <icaroperseo[at]protonmail[dot]com>
+# Contributor: Lucas Saliés Brum <lucas@archlinux.com.br>
+
+pkgname=papirus-icon-theme-git
+pkgver=20171108.r1902.gfffac7def
+pkgrel=1
+pkgdesc="Papirus icon theme (git version)"
+url="https://github.com/PapirusDevelopmentTeam/${pkgname%-git}"
+arch=('any')
+license=('LGPL3')
+makedepends=('git')
+provides=("${pkgname%-git}")
+conflicts=(
+  "${pkgname%-git}"
+  "papirus-gtk-icon-theme"
+  "papirus-gtk-icon-theme-git"
+  "papirus-icon-theme-gtk"
+  "papirus-icon-theme-gtk-git"
+  "papirus-icon-theme-kde"
+  "papirus-icon-theme-kde-git"
+)
+replaces=(
+  "papirus-icon-theme-gtk-git"
+  "papirus-icon-theme-kde-git"
+)
+options=('!strip')
+source=("${pkgname}::git+${url}.git")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "${srcdir}/${pkgname}"
+  # git describe
+  # git describe --long --tags | sed 's/-/./g'
+  # git show
+  echo "$(git show --format='%cI' -q master | sed 's/T.*//g;s/-//g').r$(git rev-list --count HEAD).g$(git rev-parse --short HEAD)"
+}
+
+package() {
+  cd "${srcdir}/${pkgname}"
+  make DESTDIR="${pkgdir}/" install
+}

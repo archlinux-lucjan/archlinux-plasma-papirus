@@ -3,7 +3,9 @@
 ├── README.md
 ├── adapta-kde-git
 │   └── PKGBUILD
-└── arc-kde-git
+├── arc-kde-git
+│   └── PKGBUILD
+└── papirus-icon-theme-git
     └── PKGBUILD
 
-2 directories, 4 files
+3 directories, 5 files
