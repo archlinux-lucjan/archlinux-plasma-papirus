@@ -4,7 +4,7 @@
 pkgbase=arc-kde-git
 _pkgbase=arc-kde
 pkgname=('arc-kde-git' 'kvantum-theme-arc-git')
-pkgver=20171105.r152.ga0abe6f
+pkgver=20180420.r174.g68e589d
 pkgrel=1
 pkgdesc="Arc theme for KDE Plasma 5"
 arch=('any')
@@ -27,7 +27,6 @@ package_arc-kde-git() {
                 'papirus-icon-theme: for a more consistent and beautiful experience (recommended)')
     provides=('arc-kde')
     conflicts=('arc-kde')
-    replaces=('arc-kde')
     cd ${_pkgbase}
     install -d "${pkgdir}"/usr/share
  
@@ -43,7 +42,6 @@ package_kvantum-theme-arc-git() {
     depends=('kvantum-qt5')
     provides=('kvantum-theme-arc')
     conflicts=('kvantum-theme-arc')
-    replaces=('kvantum-theme-arc')
     cd ${_pkgbase}
     install -d "${pkgdir}"/usr/share
 
