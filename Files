@@ -1,13 +1,15 @@
 .
-├── Files
-├── README.md
 ├── adapta-kde-git
 │   └── PKGBUILD
 ├── arc-kde-git
 │   └── PKGBUILD
+├── Files
+├── materia-kde-git
+│   └── PKGBUILD
 ├── papirus-folders-git
 │   └── PKGBUILD
-└── papirus-icon-theme-git
-    └── PKGBUILD
+├── papirus-icon-theme-git
+│   └── PKGBUILD
+└── README.md
 
-4 directories, 6 files
+5 directories, 7 files

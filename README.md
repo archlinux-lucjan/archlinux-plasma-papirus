@@ -37,4 +37,14 @@ makepkg -srci
 
 ```
 
+# Materia KDE (Git version)
+
+* See: https://github.com/PapirusDevelopmentTeam/materia-kde
+
+```
+cd /some_path/archlinux-plasma-papirus/materia-kde-git
+makepkg -srci
+
+```
+
 
