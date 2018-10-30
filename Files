@@ -6,6 +6,8 @@
 ├── Files
 ├── materia-kde-git
 │   └── PKGBUILD
+├── papirus-claws-mail-theme-git
+│   └── PKGBUILD
 ├── papirus-folders-git
 │   └── PKGBUILD
 ├── papirus-icon-theme-git
@@ -14,4 +16,4 @@
 │   └── PKGBUILD
 └── README.md
 
-6 directories, 8 files
+7 directories, 9 files

@@ -1,0 +1,32 @@
+# Maintainer: Piotr Gorski <lucjan.lucjanov@gmail.com>
+# Contributor: Mohammadreza Abdollahzadeh <morealaz at gmail dot com>
+
+pkgname=papirus-claws-mail-theme-git
+pkgver=20181024.r29.g7d02981
+pkgrel=1
+pkgdesc="Papirus theme for Claws Mail (git version)"
+url="https://github.com/PapirusDevelopmentTeam/${pkgname%-git}"
+arch=('any')
+license=('LGPL3')
+depends=('claws-mail')
+makedepends=('git')
+conflicts=('papirus-claws-mail-theme' 'claws-mail-papirus-theme' 'claws-mail-papirus-theme-git')
+options=('!strip')
+source=("${pkgname}::git+${url}.git")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd ${pkgname}
+  # git describe
+  # git describe --long --tags | sed 's/-/./g'
+  # git show
+  echo "$(git show --format='%cI' -q master | sed 's/T.*//g;s/-//g').r$(git rev-list --count HEAD).g$(git rev-parse --short HEAD)"
+}
+
+package() {
+  cd ${pkgname}
+  install -d "${pkgdir}"/usr/share/claws-mail/themes
+  cp -a ./{ePapirus,Papirus{,-{Light,Dark,Adapta{,-Nokto}}}} \
+      "${pkgdir}"/usr/share/claws-mail/themes/
+}
+# vim:set ts=2 sw=2 et:
