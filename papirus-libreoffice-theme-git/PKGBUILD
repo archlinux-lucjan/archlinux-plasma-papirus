@@ -1,0 +1,29 @@
+# Maintainer: Piotr Gorski <lucjan.lucjanov@gmail.com>
+# Contributor: Marcus Behrendt <marcus dot behrendt dot eightysix(in numbers) at bigbrothergoogle dot com
+
+pkgname=papirus-libreoffice-theme-git
+pkgver=20180413.r47.gcfe7659
+pkgrel=1
+pkgdesc="Papirus theme for LibreOffice (git version)"
+url="https://github.com/PapirusDevelopmentTeam/${pkgname%-git}"
+arch=('any')
+license=('GPL')
+depends=('libreoffice')
+makedepends=('git')
+conflicts=('papirus-libreoffice-theme' 'libreoffice-papirus-theme' 'libreoffice-papirus-theme-git')
+options=('!strip')
+source=("${pkgname}::git+${url}.git")
+sha256sums=('SKIP')
+
+pkgver() {
+    cd ${pkgname}
+    # git describe
+    # git describe --long --tags | sed 's/-/./g'
+    # git show
+    echo "$(git show --format='%cI' -q master | sed 's/T.*//g;s/-//g').r$(git rev-list --count HEAD).g$(git rev-parse --short HEAD)"
+}
+
+package() {
+    cd "${srcdir}/${pkgname}"
+    make PREFIX="/usr/lib" DESTDIR="${pkgdir}" install
+}

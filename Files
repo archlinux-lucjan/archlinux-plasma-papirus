@@ -12,8 +12,10 @@
 │   └── PKGBUILD
 ├── papirus-icon-theme-git
 │   └── PKGBUILD
+├── papirus-libreoffice-theme-git
+│   └── PKGBUILD
 ├── papirus-smplayer-theme-git
 │   └── PKGBUILD
 └── README.md
 
-7 directories, 9 files
+8 directories, 10 files
