@@ -1,0 +1,29 @@
+# Maintainer: Piotr Gorski <lucjan.lucjanov@gmail.com>
+# Contributor: FadeMind <fademind@gmail.com>
+
+pkgname=papirus-smplayer-theme-git
+pkgver=20181024.r46.g69a6693
+pkgrel=1
+pkgdesc="Papirus theme for SMPlayer (git version)"
+url="https://github.com/PapirusDevelopmentTeam/${pkgname%-git}"
+arch=('any')
+license=('GPL')
+depends=('smplayer')
+makedepends=('git' 'make')
+conflicts=('papirus-smplayer-theme')
+options=('!strip')
+source=("${pkgname}::git+${url}.git")
+sha256sums=('SKIP')
+
+pkgver() {
+    cd ${pkgname}
+    # git describe
+    # git describe --long --tags | sed 's/-/./g'
+    # git show
+    echo "$(git show --format='%cI' -q master | sed 's/T.*//g;s/-//g').r$(git rev-list --count HEAD).g$(git rev-parse --short HEAD)"
+}
+
+package() {
+    cd ${pkgname}
+    make install DESTDIR="$pkgdir"
+}

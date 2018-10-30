@@ -10,6 +10,8 @@
 │   └── PKGBUILD
 ├── papirus-icon-theme-git
 │   └── PKGBUILD
+├── papirus-smplayer-theme-git
+│   └── PKGBUILD
 └── README.md
 
-5 directories, 7 files
+6 directories, 8 files
