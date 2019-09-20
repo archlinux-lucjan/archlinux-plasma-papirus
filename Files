@@ -9,6 +9,7 @@
 ├── papirus-claws-mail-theme-git
 │   └── PKGBUILD
 ├── papirus-folders-git
+│   ├── papirus-folders.hook
 │   └── PKGBUILD
 ├── papirus-icon-theme-git
 │   └── PKGBUILD
@@ -18,4 +19,4 @@
 │   └── PKGBUILD
 └── README.md
 
-8 directories, 10 files
+8 directories, 11 files
