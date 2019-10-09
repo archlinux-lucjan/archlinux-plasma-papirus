@@ -47,4 +47,53 @@ makepkg -srci
 
 ```
 
+# Papirus Claws Mail Theme
+
+* See: https://github.com/PapirusDevelopmentTeam/papirus-claws-mail-theme
+
+```
+cd /some_path/archlinux-plasma-papirus/papirus-claws-mail-theme-git
+makepkg -srci
+
+```
+
+# Papirus Folders
+
+* See: https://github.com/PapirusDevelopmentTeam/papirus-folders
+
+```
+cd /some_path/archlinux-plasma-papirus/papirus-folders-git
+makepkg -srci
+
+```
+
+# Papirus Icon Theme
+
+* See: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+
+```
+cd /some_path/archlinux-plasma-papirus/papirus-icon-theme-git
+makepkg -srci
+
+```
+
+# Papirus LibreOffice Theme
+
+* See: https://github.com/PapirusDevelopmentTeam/papirus-libreoffice-theme
+
+```
+cd /some_path/archlinux-plasma-papirus/papirus-libreoffice-theme-git
+makepkg -srci
+
+```
+
+# Papirus SMplayer Theme
+
+* See: https://github.com/PapirusDevelopmentTeam/papirus-smplayer-theme
+
+```
+cd /some_path/archlinux-plasma-papirus/papirus-smplayer-theme-git
+makepkg -srci
+
+```
 
