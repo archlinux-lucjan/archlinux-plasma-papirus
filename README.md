@@ -47,7 +47,7 @@ makepkg -srci
 
 ```
 
-# Papirus Claws Mail Theme
+# Papirus Claws Mail Theme (Git version)
 
 * See: https://github.com/PapirusDevelopmentTeam/papirus-claws-mail-theme
 
@@ -57,7 +57,7 @@ makepkg -srci
 
 ```
 
-# Papirus Folders
+# Papirus Folders (Git version)
 
 * See: https://github.com/PapirusDevelopmentTeam/papirus-folders
 
@@ -67,7 +67,7 @@ makepkg -srci
 
 ```
 
-# Papirus Icon Theme
+# Papirus Icon Theme (Git version)
 
 * See: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 
@@ -77,7 +77,7 @@ makepkg -srci
 
 ```
 
-# Papirus LibreOffice Theme
+# Papirus LibreOffice Theme (Git version)
 
 * See: https://github.com/PapirusDevelopmentTeam/papirus-libreoffice-theme
 
@@ -87,7 +87,7 @@ makepkg -srci
 
 ```
 
-# Papirus SMplayer Theme
+# Papirus SMplayer Theme (Git version)
 
 * See: https://github.com/PapirusDevelopmentTeam/papirus-smplayer-theme
 
