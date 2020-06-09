@@ -20,6 +20,7 @@ git clone https://gitlab.com/archlinux-lucjan/archlinux-plasma-papirus.git
 # Adapta KDE (Git version)
 
 * See: https://github.com/PapirusDevelopmentTeam/adapta-kde 
+* Note: The project has been archived
 
 ```
 cd /some_path/archlinux-plasma-papirus/adapta-kde-git
